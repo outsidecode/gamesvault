@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schema.tauri.app/config/2/capability.json",
+  "identifier": "mobile",
+  "description": "Capacidades para Android",
+  "platforms": ["android", "iOS"],
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "sql:allow-execute",
+    "sql:allow-select",
+    "sql:allow-load"
+  ]
+}

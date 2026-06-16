@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0F0F1A;
+    color: #E2E8F0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    overflow: hidden;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #6C63FF #1A1A2E;
+  }
+  *::-webkit-scrollbar { width: 6px; height: 6px; }
+  *::-webkit-scrollbar-track { background: #1A1A2E; }
+  *::-webkit-scrollbar-thumb { background: #6C63FF; border-radius: 3px; }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.2s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
